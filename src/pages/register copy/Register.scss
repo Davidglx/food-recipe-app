@@ -1,0 +1,88 @@
+.register{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    background: linear-gradient(
+    to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgb(241, 8, 8) 120%
+    ),
+    url("https://images.hdqwalls.com/download/the-sandman-4k-lj-1366x768.jpg");
+
+    .top{
+        .wrapper{
+            padding: 20px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .logo{
+                height: 40px;
+            }
+
+            .loginButton{
+                background-color: red;
+                border: none;
+                color: white;
+                border-radius: 5px;
+                padding: 5px 15px;
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .container{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+
+        h1{
+            font-size: 50px;
+        }
+
+        h2{
+            margin: 20px;
+        }
+        p{
+            font-size: 20px;
+        }
+
+        .input{
+            width: 50%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 50px;
+            border-radius: 0px 20px;
+
+            input{
+                flex: 9;
+                border: none;
+                padding: 0 10px;
+                outline: none;
+            }
+
+            .registerButton{
+                flex: 3;
+                height: 100%;
+                background-color: red;
+                border: none;
+                color: white;
+                font-family: cursive;
+                border-radius: 0px 20px;
+                font-size: 19px;
+            }
+        }
+    }
+}

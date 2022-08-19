@@ -1,17 +1,16 @@
-import Meal from "./components/Meal";
-import './components/styles.css';
-import { Route, Routes } from "react-router-dom";
-import RecipeInfp from "./components/RecipeInfp";
+import React from 'react';
+import './App.scss';
+import Home from './pages/home/Home';
+import Watch from './pages/watch/Watch';
+import Register from './pages/login/login';
+import Login from './pages/login/login';
 
 const App = () => {
   return (
-    <>
-    <Routes>
-      <Route path="/" element={<Meal />} />
-      <Route path="/:MealId" element={<RecipeInfp/>}  />
-    </Routes>
-    </>
-  );
-};
+   <div className='App'>
+     <Home />
+   </div>
+  )
+}
 
 export default App;
